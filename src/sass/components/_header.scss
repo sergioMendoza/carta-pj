@@ -1,0 +1,20 @@
+.headerbox {
+  text-align: center;
+
+  .headerbox__image {
+    width: 128px;
+  }
+}
+
+.big-pizza-section__title {
+  background-color: $darkred-papa;
+  color: white;
+  font-size: 29px;
+  font-family: $papafont , sans-serif;
+  text-transform: uppercase;
+
+  .big-pizza-section__image {
+    height: 40px;
+    width: 40px;
+  }
+}

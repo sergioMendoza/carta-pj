@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "papafont";
+  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
+}
+@font-face {
+  font-family: "papafont";
+  src: url("../assets/fonts/Knockout-HTF69-FullLiteweight.otf") format("truetype");
+}
+.btn-active {
+  background-color: #009774 !important;
+}
+
+.box-size__border {
+  border: 2px solid #009774;
+  border-radius: 5px;
+}
+.box-size__border .box-size__border__name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #807673;
+  font-family: "papafont", sans-serif;
+  text-transform: uppercase;
+}
+
+.pizza {
+  color: #898988;
+}
+.pizza .pizza__name {
+  font-size: 22px;
+  font-weight: 500;
+  color: #807673;
+  font-family: "papafont", sans-serif;
+  text-transform: uppercase;
+}
+.pizza .pizza__button {
+  text-align: center;
+  padding: 0 10px;
+  background-color: #A39D9B;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 35px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+.pizza .pizza--font14 {
+  font-size: 12px;
+}
+.pizza .pizza__number-span {
+  color: #009774;
+  font-size: 24px;
+}
+.pizza .pizza--height-detail {
+  height: 85px;
+}
+@media (max-width: 340px) {
+  .pizza .pizza--height-detail {
+    height: 100px;
+  }
+}
+.pizza .pizza--height-detail2 {
+  height: 100px;
+}
+@media (max-width: 340px) {
+  .pizza .pizza--height-detail2 {
+    height: 135px;
+  }
+}
+.pizza .pizza--height-detail3 {
+  height: 50px;
+}
+
+.pizza--hide {
+  display: none;
+}
+
+input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+input[type=radio]:checked + label::before {
+  background-color: #009774;
+}
+
+.pizza-count {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  line-height: 36px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.pizza-count::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #009774;
+  border-radius: 18px;
+  z-index: -1;
+}
+@media (max-width: 340px) {
+  .pizza-count {
+    padding-right: 5px;
+    padding-left: 26px;
+  }
+}
+
+.confirm {
+  text-align: center;
+}
+.confirm .confirm__btn-confirm-pizza {
+  background-color: #009774;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+}
+.confirm .confirm__text-aler {
+  color: #BB141A;
+  font-weight: 700;
+}
+
+.headerbox {
+  text-align: center;
+}
+.headerbox .headerbox__image {
+  width: 128px;
+}
+
+.big-pizza-section__title {
+  background-color: #BB141A;
+  color: white;
+  font-size: 29px;
+  font-family: papafont, sans-serif;
+  text-transform: uppercase;
+}
+.big-pizza-section__title .big-pizza-section__image {
+  height: 40px;
+  width: 40px;
+}
+
+/*# sourceMappingURL=main.css.map */

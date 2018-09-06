@@ -1,0 +1,125 @@
+.box-size__border {
+    border: 2px solid $green-papa;
+    border-radius: 5px;
+  
+    .box-size__border__name {
+      font-size: 22px;
+      font-weight: 500;
+      color: $darkgrey-papa;
+      font-family: "papafont" , sans-serif;
+      text-transform: uppercase;
+    }
+  }
+  
+  .pizza {
+    color: #898988;
+  
+    .pizza__name {
+      font-size: 22px;
+      font-weight: 500;
+      color: $darkgrey-papa;
+      font-family: "papafont" , sans-serif;
+      text-transform: uppercase;
+    }
+  
+    .pizza__button {
+      text-align: center;
+      padding: 0 10px;
+      background-color: $lightgrey-papa;
+      color: white;
+      border: none;
+      height: 40px;
+      width: 35px;
+      font-size: 18px;
+      border-radius: 8px
+    }
+  
+    .pizza--font14 {
+      font-size: 12px;
+    }
+  
+    .pizza__number-span {
+      color: $green-papa;
+      font-size: 24px;
+    }
+  
+    .pizza--height-detail {
+      height: 85px;
+      @media (max-width: 340px) {
+        height: 100px;
+      }
+    }
+  
+    .pizza--height-detail2 {
+      height: 100px;
+      @media (max-width: 340px) {
+        height: 135px;
+      }
+    }
+    .pizza--height-detail3 {
+      height: 50px;
+    }
+  }
+  
+  .pizza--hide {
+    display: none;
+  }
+  
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  input[type="radio"]:checked+label::before {
+    background-color: $green-papa;
+  }
+  
+  .pizza-count {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 10px;
+    line-height: 36px;
+    cursor: pointer;
+    font-size: 14px;
+    
+  
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 6px;
+      left: 0;
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 2px solid $green-papa;
+      border-radius: 18px;
+      z-index: -1;
+    }
+    @media (max-width: 340px) {
+      padding-right: 5px;
+      padding-left: 26px;
+    }
+  
+  }
+  
+  .confirm {
+    text-align: center;
+  
+    .confirm__btn-confirm-pizza {
+      background-color: $green-papa;
+      width: 100%;
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+      border: none;
+    }
+  
+    .confirm__text-aler {
+      color: $darkred-papa;
+      font-weight: 700;
+    }
+  }
+  
