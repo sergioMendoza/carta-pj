@@ -32,6 +32,9 @@
   font-family: "papafont", sans-serif;
   text-transform: uppercase;
 }
+.pizza .pizza__name--space {
+  letter-spacing: 0.8px;
+}
 .pizza .pizza__button {
   text-align: center;
   padding: 0 10px;
@@ -42,6 +45,10 @@
   width: 35px;
   font-size: 18px;
   border-radius: 8px;
+  outline: none;
+}
+.pizza .pizza__button:focus {
+  outline: none;
 }
 .pizza .pizza--font14 {
   font-size: 12px;

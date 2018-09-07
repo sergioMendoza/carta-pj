@@ -62,7 +62,7 @@ const desactiveButtonIncrement = (element, idNumber) => {
   const number = element.parentElement.nextElementSibling;
   const btnIncrement = number.nextElementSibling.children[0].id;
   const btnDecrement = element.id;
-  if (document.querySelector(`#${idNumber}`).textContent === 0) {
+  if (document.querySelector(`#${idNumber}`).textContent === '0') {
     document.querySelector(`#${btnIncrement}`).classList.remove('btn-active');
     document.querySelector(`#${btnDecrement}`).classList.remove('btn-active');
   }
