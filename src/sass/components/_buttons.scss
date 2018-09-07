@@ -1,3 +1,8 @@
-.btn-active{
-    background-color: $green-papa !important; 
+.btn-active {
+  background-color: $green-papa !important;
+  outline: none;
+
+  &:focus {
+    outline: none;
+  }
 }
