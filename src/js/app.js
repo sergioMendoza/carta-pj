@@ -4,6 +4,7 @@
 // Variables DOM
 const containerBigPizza = document.querySelector('.container-bigpizza');
 const containerFamilyPizza = document.querySelector('.container-familypizza');
+const containerSuperFamily = document.querySelector('.container-superfamilypizza');
 const radioBtnSize = document.querySelector('#radiotipo');
 
 
@@ -27,11 +28,18 @@ const viewSizeContainerPizzas = () => {
   const valueSelection = getValueRadio('tipo');
   if (valueSelection === 'Grande') {
     hideSection(containerFamilyPizza);
+    hideSection(containerSuperFamily);
     showSection(containerBigPizza);
   }
   if (valueSelection === 'Familiar') {
     hideSection(containerBigPizza);
+    hideSection(containerSuperFamily);
     showSection(containerFamilyPizza);
+  }
+  if (valueSelection === 'Super Familiar') {
+    hideSection(containerBigPizza);
+    hideSection(containerFamilyPizza);
+    showSection(containerSuperFamily);
   }
 };
 
@@ -71,6 +79,7 @@ const desactiveButtonIncrement = (element, idNumber) => {
 // function initialize
 const init = () => {
   hideSection(containerFamilyPizza);
+  hideSection(containerSuperFamily);
 };
 // Execute
 // Function that initializes when loading
