@@ -1579,15 +1579,33 @@
 
         $('#confirmOrder').click(function (event) {
 
-            MessengerExtensions.requestCloseBrowser(function success() {
-                // webview closed
-                console.log('Closed the window!');
-            }, function error(error) {
-                // an error occurred
-                console.log('Error closing browser window!');
-                console.log(error);
+            MessengerExtensions.getContext('268102330509980',
+                function success(thread_context){
 
-            });
+                    var request = {};
+                    request.fbSenderId = thread_context.psid;
+
+                    $.ajax({
+                        type: "POST",
+                        url: "https://10ef9d65.ngrok.io/orders",
+                        data: JSON.stringify(request),
+                        dataType: 'json',
+                        success: function (response) {
+                            console.log(response);
+                            MessengerExtensions.requestCloseBrowser(function success() {
+                                console.log('closing');
+                            }, function error(err) {
+                                console.log('some error:'+ err);
+                            });
+
+                        },
+                    });
+
+                },
+                function error(err){
+                    console.log('some error:'+ err);
+                }
+            );
         });
 
     };
